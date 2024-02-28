@@ -24,15 +24,25 @@
 
         <!-- Search -->
         <section class="flex justify-center mb-5">
-            <input id="search_field" type="text" placeholder="Khoj the Search" class="input input-bordered w-full max-w-xs bg-gray-50" />
+            <input id="search_field" type="text" placeholder="Khoj the Search"
+                class="input input-bordered w-full max-w-xs bg-gray-50" />
             <button onclick="handleSearch()" class="btn btn-active btn-accent">Search</button>
         </section>
 
+        <!-- Loading Bar -->
+        <section id="loading_bar" class="hidden text-center my-10">
+            <span class="loading loading-bars loading-lg"></span>
+        </section>
 
         <!-- Search Result -->
         <section id="phone_container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
 
         </section>
+
+        <!-- Show All button -->
+        <div id="show_all_button" class="hidden text-center mt-5">
+            <button class="btn btn-active btn-accent">Show All</button>
+        </div>
 
     </main>
 
